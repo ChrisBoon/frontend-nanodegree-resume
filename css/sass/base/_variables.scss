@@ -1,0 +1,27 @@
+//color variables:
+$c-1: #f8981c;
+$c-2: #bcbcbc;
+$c-3: #676857;
+$c-text-light: #aaa;
+
+//use $unit for sizing when keeping same even if root font-size changes:
+$unit: 8px;
+
+//use $unitRem for sizing when it should be based on root font-size:
+$unitRem: 0.5rem;
+
+
+// mixins here until the file gets long then split into separate file:
+@mixin card-essentials{
+  border-radius: 2px;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.3);
+  background: rgb(255, 255, 255);
+}
+@mixin card{
+  @include card-essentials;
+  margin: $unit*2 0;
+  padding: $unit $unit;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+}

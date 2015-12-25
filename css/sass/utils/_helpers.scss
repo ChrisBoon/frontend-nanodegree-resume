@@ -1,0 +1,43 @@
+//helpers
+
+@mixin retina(){
+  @media
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi) {
+      @content;
+  }
+}
+
+@mixin media-reg(){
+  @media
+  screen and (max-width: 800px) {
+      @content;
+  }
+}
+
+@mixin media-regUP(){
+  @media
+  screen and (min-width: 801px) {
+      @content;
+  }
+}
+@mixin media-med-small(){
+  @media
+  screen and (max-width: 700px) {
+      @content;
+  }
+}
+
+@mixin media-small(){
+  @media
+  screen and (max-width: 500px) {
+      @content;
+  }
+}
+
+@mixin media-crazysmall(){
+  @media
+  screen and (max-width: 300px) {
+      @content;
+  }
+}
