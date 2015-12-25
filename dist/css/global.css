@@ -165,15 +165,8 @@ html
     color: #676857;
 }
 
-html
-{
-    height: 100%;
-}
-
 body
 {
-    height: 100%;
-
     background-color: #e1e1e1;
 }
 
@@ -182,10 +175,10 @@ body
     display: -webkit-flex;
     display: -ms-flexbox;
     display:         flex;
+    overflow: auto;
             flex-direction: column;
 
     max-width: 960px;
-    height: 100%;
     margin: 0 auto;
     padding: 0 24px;
 
@@ -225,6 +218,12 @@ body
 
         -webkit-flex-direction: column;
             -ms-flex-direction: column;
+    }
+    #header > *
+    {
+        -webkit-flex: 0 0 auto;
+            -ms-flex: 0 0 auto;
+                flex: 0 0 auto;
     }
 }
 #header .biopic
@@ -339,6 +338,9 @@ body
 
         -webkit-flex-direction: column;
             -ms-flex-direction: column;
+        -webkit-flex: 0 0 auto;
+            -ms-flex: 0 0 auto;
+                flex: 0 0 auto;
     }
 }
 #topContacts .flex-item,
