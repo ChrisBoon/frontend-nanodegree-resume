@@ -7,8 +7,7 @@ var bio = {
     "mobile" : "646-327-4724",
     "email" : "cboon27@gmail.com",
     "github" : "ChrisBoon",
-    "codepen" : "chrisboon27",
-    "stackoverflow" : "chris-boon",
+    "twitter" : "nope",
     "location" : "NYC"
   },
   "welcomeMessage" : "Hello, I guess...",
@@ -64,7 +63,8 @@ var education = {
       "name" : "Falmouth University",
       "location" : "Falmouth, Cornwall, UK",
       "degree" : "BA (Hons) Graphic Design",
-      "dates" : 2007,
+      "majors" : "I'm not American - UK courses dont generally have 'majors'.",
+      "dates" : "2005-2007",
       "url" : "http://www.falmouth.ac.uk/"
     }
   ],
@@ -72,49 +72,49 @@ var education = {
     {
       "title" : "Learn the Command Line",
       "school" : "Codecademy",
-      "date" : 2015,
+      "date" : "2015",
       "url" : "https://www.codecademy.com"
     },
     {
       "title" : "Learn AngularJS",
       "school" : "Codecademy",
-      "date" : 2015,
+      "date" : "2015",
       "url" : "https://www.codecademy.com"
     },
     {
       "title" : "PHP",
       "school" : "Codecademy",
-      "date" : 2013,
+      "date" : "2013",
       "url" : "https://www.codecademy.com"
     },
     {
       "title" : "Python",
       "school" : "Codecademy",
-      "date" : 2013,
+      "date" : "2013",
       "url" : "https://www.codecademy.com"
     },
     {
       "title" : "Ruby",
       "school" : "Codecademy",
-      "date" : 2013,
+      "date" : "2013",
       "url" : "https://www.codecademy.com"
     },
     {
       "title" : "jQuery",
       "school" : "Codecademy",
-      "date" : 2012,
+      "date" : "2012",
       "url" : "https://www.codecademy.com"
     },
     {
       "title" : "HTML & CSS",
       "school" : "Codecademy",
-      "date" : 2012,
+      "date" : "2012",
       "url" : "https://www.codecademy.com"
     },
     {
       "title" : "Javascript",
       "school" : "Codecademy",
-      "date" : 2012,
+      "date" : "2012",
       "url" : "https://www.codecademy.com"
     }
 
