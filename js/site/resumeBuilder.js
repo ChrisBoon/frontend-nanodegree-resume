@@ -209,9 +209,8 @@ var projects = {
       "dates" : "2014",
       "description" : "add text here when sure what to include",
       "images" : [
-        "url1",
-        "url2",
-        "url3"
+        "http://www.ssonlinepractice.com/promos/img/course-specific/stars/card-img-activity.jpg",
+        "http://www.ssonlinepractice.com/promos/img/course-specific/stars/card-img-dash.jpg"
       ]
     }
   ],
