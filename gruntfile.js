@@ -45,12 +45,9 @@ module.exports = function(grunt) {
                 src: 'build/css/global.css'
             }
         },
-        csscomb: {
-            foo: {
-                 files: {
-                     'build/css/global.css': ['build/css/global.css']
-                 }
-            }
+
+        cssbeautifier : {
+          files : ['build/css/global.css']
         },
         copy: {
             img: {
@@ -108,7 +105,7 @@ module.exports = function(grunt) {
             },
             css: {
                 files: ['css/sass/*.scss'],
-                tasks: ['sass','postcss','csscomb'],
+                tasks: ['sass','postcss','cssbeautifier'],
                 options: {
                     spawn: false,
                     livereload: true,
@@ -123,7 +120,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-postcss');
-    grunt.loadNpmTasks('grunt-csscomb');
+    grunt.loadNpmTasks('grunt-cssbeautifier');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-connect');
@@ -135,7 +132,7 @@ module.exports = function(grunt) {
         'uglify',
         'sass',
         'postcss',
-        'csscomb',
+        'cssbeautifier',
         'copy:build'
     ]);
 
