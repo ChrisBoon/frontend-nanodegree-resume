@@ -9307,9 +9307,9 @@ var projects = {
             projImg = '';
 
         if (thisProj.images.length > 0) {
-          thisProj.images.forEach(
-            projImg = projImg + HTMLprojectImage.replace( '%data%' , img)
-          );
+          for (var i=0; i<thisProj.images.length; i++){
+            projImg = projImg + HTMLprojectImage.replace( '%data%' , thisProj.images[i]);
+          }
         }
 
         $('.project-entry:last').append(projTitle + projDates + projDesc + projImg);
