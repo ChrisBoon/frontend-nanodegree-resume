@@ -70,27 +70,9 @@ var education = {
   ],
   "onlineCourses" : [
     {
-      "title" : "jQuery",
+      "title" : "Learn the Command Line",
       "school" : "Codecademy",
-      "date" : 2012,
-      "url" : "https://www.codecademy.com"
-    },
-    {
-      "title" : "PHP",
-      "school" : "Codecademy",
-      "date" : 2013,
-      "url" : "https://www.codecademy.com"
-    },
-    {
-      "title" : "HTML & CSS",
-      "school" : "Codecademy",
-      "date" : 2012,
-      "url" : "https://www.codecademy.com"
-    },
-    {
-      "title" : "Javascript",
-      "school" : "Codecademy",
-      "date" : 2012,
+      "date" : 2015,
       "url" : "https://www.codecademy.com"
     },
     {
@@ -100,9 +82,9 @@ var education = {
       "url" : "https://www.codecademy.com"
     },
     {
-      "title" : "Learn the Command Line",
+      "title" : "PHP",
       "school" : "Codecademy",
-      "date" : 2015,
+      "date" : 2013,
       "url" : "https://www.codecademy.com"
     },
     {
@@ -116,7 +98,26 @@ var education = {
       "school" : "Codecademy",
       "date" : 2013,
       "url" : "https://www.codecademy.com"
+    },
+    {
+      "title" : "jQuery",
+      "school" : "Codecademy",
+      "date" : 2012,
+      "url" : "https://www.codecademy.com"
+    },
+    {
+      "title" : "HTML & CSS",
+      "school" : "Codecademy",
+      "date" : 2012,
+      "url" : "https://www.codecademy.com"
+    },
+    {
+      "title" : "Javascript",
+      "school" : "Codecademy",
+      "date" : 2012,
+      "url" : "https://www.codecademy.com"
     }
+
 
   ],
   "display" : function(){
