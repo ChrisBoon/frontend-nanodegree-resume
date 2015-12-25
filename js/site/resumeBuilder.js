@@ -133,7 +133,7 @@ var education = {
             thisDegree = HTMLschoolDegree.replace( '%data%' , thisSchool.degree ),
             thisDate = HTMLschoolDates.replace( '%data%' , thisSchool.dates);
 
-        $('.education-entry:last').append(thisName+ thisLocation + thisDegree + thisDate);
+        $('.education-entry:last').append(thisName+ thisDegree + thisDate+ thisLocation );
       }
     }
 
