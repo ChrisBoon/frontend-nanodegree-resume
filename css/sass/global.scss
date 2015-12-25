@@ -8,22 +8,19 @@
 //putting all rules here for now as page is simple enough to not pull into separate scss files
 
 //---scaffold
-html{
-  height: 100%;
-}
+
 body {
-  height: 100%;
   background-color: #e1e1e1;
 }
 
 #main{
-  height: 100%;
   max-width: 960px;
   padding: 0 $unit*3;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   flex: 1 1 auto;
+  overflow: auto;
 }
 
 
@@ -35,6 +32,9 @@ body {
   align-items: center;
   @include media-small{
     flex-direction: column;
+    >*{
+      flex: 0 0 auto;
+    }
   }
   padding: $unitRem*2 0;
   border-bottom: $unit/2 solid $c-1;
@@ -98,6 +98,7 @@ body {
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
+      flex: 0 0 auto;
     margin: $unitRem 0;
     font-size: 0.9em;
   }
