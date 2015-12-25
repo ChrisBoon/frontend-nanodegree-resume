@@ -37,7 +37,7 @@ var bio = {
         headingSkills = headingSkills + HTMLskills.replace( '%data%' , entry );
       });
 
-    };
+    }
 
     $('#header').prepend(headingName + headingRole);
     $('#header').append(headingImg);
@@ -46,17 +46,17 @@ var bio = {
     //I left the code in the comments so you could see it was intentional
     // $('#header').append(headingMessage + headingSkills);
 
-    for (contact in this.contacts){
+    for ( var contact in this.contacts){
       if (this.contacts.hasOwnProperty(contact)) {
 
-        var thisContact = HTMLcontactGeneric.replace( '%contact%' , contact ).replace( '%data%' , this.contacts[contact] )
+        var thisContact = HTMLcontactGeneric.replace( '%contact%' , contact ).replace( '%data%' , this.contacts[contact] );
 
         $('#topContacts, #footerContacts').append(thisContact);
       }
     }
 
   }
-}
+};
 
 var education = {
   "schools" : [
@@ -124,10 +124,12 @@ var education = {
     var schoolList = this.schools,
         courseList = this.onlineCourses;
 
-    for (school in schoolList){
+    for ( var school in schoolList){
+
       if (schoolList.hasOwnProperty(school)) {
 
-        $('#education').append(HTMLschoolStart)
+        $('#education').append(HTMLschoolStart);
+
         var thisSchool = schoolList[school],
             thisName = HTMLschoolName.replace( '%data%' , thisSchool.name ),
             thisLocation = HTMLschoolLocation.replace( '%data%' , thisSchool.location),
@@ -141,24 +143,24 @@ var education = {
     if (courseList.length > 0) {
       $('#education').append(HTMLonlineClasses);
 
-        for (course in courseList){
+        for ( var course in courseList){
           if (courseList.hasOwnProperty(course)) {
 
-          $('#education').append(HTMLonlineClassesStart)
+          $('#education').append(HTMLonlineClassesStart);
+
           var thisCourse = courseList[course],
               thisTitle = HTMLonlineTitle.replace( '%data%' , thisCourse.title ),
-              thisSchool = HTMLonlineSchool.replace( '%data%' , thisCourse.school),
+              thisSite = HTMLonlineSchool.replace( '%data%' , thisCourse.school),
               thisDates = HTMLonlineDates.replace( '%data%' , thisCourse.date ),
               thisURL = HTMLonlineURL.replace( /%data%/g, thisCourse.url);
 
-          $('.classes-entry:last').append(thisTitle + thisSchool + thisDates + thisURL);
+          $('.classes-entry:last').append(thisTitle + thisSite + thisDates + thisURL);
 
-          };
         }
-
-    };
+      }
+    }
   }
-}
+};
 
 var work = {
   "jobs": [
@@ -187,10 +189,11 @@ var work = {
   "display" : function(){
     var workList = this.jobs;
 
-    for (job in workList){
+    for ( var job in workList ){
       if (workList.hasOwnProperty(job)) {
 
-        $('#workExperience').append(HTMLworkStart)
+        $('#workExperience').append(HTMLworkStart);
+
         var thisJob = workList[job],
             thisEmployer = HTMLworkEmployer.replace( '%data%' , thisJob.employer ),
             thisTitle = HTMLworkTitle.replace( '%data%' , thisJob.title ),
@@ -201,7 +204,7 @@ var work = {
       }
     }
   }
-}
+};
 
 var projects = {
   "projects" : [
@@ -219,28 +222,30 @@ var projects = {
 
     var projectList = this.projects;
 
-    for (proj in projectList){
+
+    for ( var proj in projectList ){
 
       if (projectList.hasOwnProperty(proj)) {
 
-        $('#projects').append(HTMLprojectStart)
+        $('#projects').append(HTMLprojectStart);
 
         var thisProj = projectList[proj],
             projTitle = HTMLprojectTitle.replace( '%data%' , thisProj.title ),
             projDates = HTMLprojectDates.replace( '%data%' , thisProj.dates ),
             projDesc = HTMLprojectDescription.replace( '%data%' , thisProj.description),
             projImg = '';
+
         if (thisProj.images.length > 0) {
-          thisProj.images.forEach(function(img){
-            projImg = projImg + HTMLprojectImage.replace( '%data%' , img);
-          });
-        };
+          thisProj.images.forEach(
+            projImg = projImg + HTMLprojectImage.replace( '%data%' , img)
+          );
+        }
 
         $('.project-entry:last').append(projTitle + projDates + projDesc + projImg);
       }
     }
   }
-}
+};
 
 
 var initResume = function(){
@@ -258,8 +263,8 @@ var initResume = function(){
     var x = loc.pageX,
         y = loc.pageY;
 
-    logClicks(x,y)
+    logClicks(x,y);
   });
-}
+};
 
 initResume();
