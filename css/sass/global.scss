@@ -192,11 +192,8 @@ h2, h3{
 .classes-entry{
   @include card-essentials;
   display: flex;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-justify-content: space-around;
-          justify-content: space-around;
+  flex-direction: column;
+  justify-content: space-between;
   padding: $unit;
 
   @include media-regUP{
