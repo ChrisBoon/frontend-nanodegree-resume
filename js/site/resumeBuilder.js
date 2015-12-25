@@ -40,9 +40,11 @@ var bio = {
     };
 
     $('#header').prepend(headingName + headingRole);
-    $('#header').append(headingImg + headingMessage + headingSkills);
+    $('#header').append(headingImg);
 
-
+    //personally I don't want to have the 'message' or 'skills at a glance' so I've commented out the code that adds them
+    //I left the code in the comments so you could see it was intentional
+    // $('#header').append(headingMessage + headingSkills);
 
     for (contact in this.contacts){
       if (this.contacts.hasOwnProperty(contact)) {
@@ -52,10 +54,6 @@ var bio = {
         $('#topContacts, #footerContacts').append(thisContact);
       }
     }
-
-
-
-
 
   }
 }
